@@ -1,0 +1,970 @@
+
+<!-- tab form inside the card-->
+<div class="container">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-form1-tab" data-bs-toggle="tab" data-bs-target="#nav-form1" type="button" role="tab" aria-controls="nav-form1" aria-selected="true">Step 1</button>
+
+        <button class="nav-link" id="nav-form2-tab" data-bs-toggle="tab" data-bs-target="#nav-form2" type="button" role="tab" aria-controls="nav-form2" aria-selected="false">Step 2</button>
+
+        <button class="nav-link" id="nav-form3-tab" data-bs-toggle="tab" data-bs-target="#nav-form3" type="button" role="tab" aria-controls="nav-form3" aria-selected="false">Step 3</button>
+
+        <button class="nav-link" id="nav-form4-tab" data-bs-toggle="tab" data-bs-target="#nav-form4" type="button" role="tab" aria-controls="nav-form4" aria-selected="false">Step 4</button>
+
+        <button class="nav-link" id="nav-form5-tab" data-bs-toggle="tab" data-bs-target="#nav-form5" type="button" role="tab" aria-controls="nav-form5" aria-selected="false">Step 5</button>
+
+        <button class="nav-link" id="nav-form6-tab" data-bs-toggle="tab" data-bs-target="#nav-form6" type="button" role="tab" aria-controls="nav-form6" aria-selected="false">Step 6</button>
+
+        <button class="nav-link" id="nav-form7-tab" data-bs-toggle="tab" data-bs-target="#nav-form7" type="button" role="tab" aria-controls="nav-form7" aria-selected="false">Step 7</button>
+
+        <button class="nav-link" id="nav-form8-tab" data-bs-toggle="tab" data-bs-target="#nav-form8" type="button" role="tab" aria-controls="nav-form8" aria-selected="false">Step 8</button>
+
+        <button class="nav-link" id="nav-form9-tab" data-bs-toggle="tab" data-bs-target="#nav-form9" type="button" role="tab" aria-controls="nav-form9" aria-selected="false">Step 9</button>
+
+        <button class="nav-link" id="nav-form10-tab" data-bs-toggle="tab" data-bs-target="#nav-form10" type="button" role="tab" aria-controls="nav-form10" aria-selected="false">Step 10</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+  
+      <div class="tab-pane fade show active" id="nav-form1" role="tabpanel" aria-labelledby="nav-form1-tab" tabindex="0">
+            <div class="card my-2">
+                <div class="card-header">Praposal Details</div>
+                    <div class="card-body">
+                        <form >
+                            <div class="row mb-2">
+                                <div class="col-md-6">
+                                    <input class="form-control" type="text" value="IRDA Regn. No.: 150" disabled readonly>
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-control" type="text" value="UIN No.: 'IRDAN150RP0003V02201314" disabled readonly>
+                                </div>
+        
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-6">
+                                    <label class="form-label">Intermediary Name</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Name of Proposer</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+        
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-6">
+                                    <label class="form-label">Communication address of Proposer</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Complete Address of Risk Location</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-6">
+                                    <label class="form-label">Risk Pincode</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Occupancy</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+        
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-6">
+                                    <label class="form-label">Policy Period Form</label>
+                                    <form class="row row-cols-sm-auto">
+                                      <div class="col-6">
+                                          <div class="input-group">
+                                              <input
+                                                  class="form-control"
+                                                  placeholder="yyyy-mm-dd"
+                                                  name="dp"
+                                                  [(ngModel)]="model"
+                                                  ngbDatepicker
+                                                  #d="ngbDatepicker"
+                                              />
+                                              <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"><!-- in class directly we added attribute for icon  So no need to put here <i class="bi bi-calendar3"></i> --></button>
+                                          </div>
+                                      </div>
+                                      
+                                  </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Policy Period To</label>
+                                    <form class="row row-cols-sm-auto">
+                                      <div class="col-12">
+                                          <div class="input-group">
+                                              <input
+                                                  class="form-control"
+                                                  placeholder="yyyy-mm-dd"
+                                                  name="dp"
+                                                  [(ngModel)]="model"
+                                                  ngbDatepicker
+                                                  #d="ngbDatepicker"
+                                              />
+                                              <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"><!-- in class directly we added attribute for icon  So no need to put here <i class="bi bi-calendar3"></i> --></button>
+                                          </div>
+                                      </div>
+                                  </form>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <label class="form-label">Describption of Property & Sum Insured</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>                  
+                        </form>
+                        <button type="button" class="btn btn-primary" style="float:right">Next</button>
+  
+                    </div> 
+            </div>
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form2" role="tabpanel" aria-labelledby="nav-form2-tab" tabindex="0">
+            <div class="card my-2">
+                <div class="card-header"> Risk parameter and other Details</div>
+                    <div class="card-body" >
+                        <form>
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Age of Building</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Construction Type</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">3 year Loss History</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Fire Protection</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Distance between Block</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Surrouding Exposure</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">LGI Renewal ?</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Storm Typhoon Flood or Inundation Exposure</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Premises Basement/Ground/Above Ground</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+        
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Whether AMC for the Fire Protection Appliances is in force</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Distance between the risk to be covered and nearest Fire Brigade</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Any other details need to be share, related to Peril Risk & Claims </label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                 
+                        </form>
+                        <button type="button" class="btn btn-primary" style="float:right">Next</button>
+                        <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button>
+                    </div> 
+            </div>
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form3" role="tabpanel" aria-labelledby="nav-form3-tab" tabindex="0">
+            <div class="card my-2">
+                <div class="card-header">Other Common Details</div>
+                    <div class="card-body" >
+                        <form>
+                                <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <label class="form-label">is Night watchman or 24 hour watchman available ?</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Burglar Proof Alarm System placed ?</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Close Circuit T.V. Installed ?</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Storage (Open or Closed) ?</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <label class="form-label">is premised surrouned with Boudary walls  ?</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Height of Boundary Walls ?</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Expiring Insurer ?</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">STFI Exposure</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Distance between Block</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Surrouding Exposure</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Past Claim experience (minimum 3 years)</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Any other details need to be share, related to Peril Risk & Claims  </label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                            <label class="col-sm-3 col-form-label">Machinery/ Equipments details</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" type="text" value="Sertial Number/ Make/ Model/Year of Mfg should be mention against each section and equipments" disabled readonly>
+                                            </div>
+                                </div>
+                        </form>
+                        <button type="button" class="btn btn-primary" style="float:right">Next</button>
+                        <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button>
+                    </div> 
+            </div>
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form4" role="tabpanel" aria-labelledby="nav-form4-tab" tabindex="0">
+            <div class="card my-2">
+                <div class="card-header"> Fire Loss of Profits</div>
+                    <div class="card-body" >
+                        <form>
+                            <div class="row mb-2">
+                                <label  class="col-sm-3 col-form-label col-form-label-sm">Indemnity Period ( In Months)</label>
+                                <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" >
+                                </div>
+                                <label  class="col-sm-3 col-form-label col-form-label-sm">Annual Gross Profit (Rs)</label>
+                                <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm"placeholder="INR" >
+                                </div>
+                            </div>
+                                <!-- <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Indemnity Period ( In Months)</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Annual Gross Profit (Rs)</label>
+                                            <input type="text" class="form-control" placeholder="INR" >
+                                        </div>
+                                </div> -->
+                                <div class="card-header mb-2">Burglary & Housebreaking (including Theft & RSMD)</div>
+                                <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Description</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Location Address</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col-md-3">
+                                            <label class="form-label">Pincode</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Fire Loss %</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Stocs SI</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Other Content SI</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label">RSMD</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">Theft</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">Fire Loss Sum Insured</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                    
+                                </div>
+                        </form>
+                        <button type="button" class="btn btn-primary" style="float:right">Next</button>
+                        <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button>
+                    </div> 
+            </div>
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form5" role="tabpanel" aria-labelledby="nav-form5-tab" tabindex="0"> 
+            <div class="card my-2">
+                <div class="card-header"> Money Insurance</div>
+                    <div class="card-body" >
+                        <form>
+                                <div class="row mb-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label">Money in Safe Coverage</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">Location address</label>
+                                            <input type="text" class="form-control"  >
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">Limit of Liability any one occurrence (Rs.)</label>
+                                            <input type="text" class="form-control" >
+                                        </div>                             
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label">Money in Till Coverage</label>
+                                            <input type="text" class="form-control" >
+                                        </div> 
+                                        <div class="col-md-4">
+                                            <label class="form-label">Location address</label>
+                                            <input type="text" class="form-control"  >
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">Limit of Liability any one occurrence (Rs.)</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Money in Transit Coverage - Annual Carrying Limit (Rs.)</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Per Sending Limit</label>
+                                            <input type="text" class="form-control"  >
+                                        </div>
+                                </div>
+                                <div class="card-header mb-2">Transit Details</div>
+                                <div class="row mb-2">
+                                    <div class="row mb-2">
+                                        <label class="col-sm-2 col-form-label">From</label>
+                                        <div class="col-sm-4">
+                                            <input class="form-control" type="text" value="Insured Premises" readonly >
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <label class="col-sm-2 col-form-label">To</label>
+                                        <div class="col-sm-4">
+                                            <input class="form-control" type="text" value="Bank & Vice versa" readonly >
+                                        </div>
+                                    </div>
+                                </div>
+            
+                        </form>
+                        <button type="button" class="btn btn-primary" style="float:right">Next</button>
+                        <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button>
+                    </div> 
+            </div>
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form6" role="tabpanel" aria-labelledby="nav-form6-tab" tabindex="0">
+          <div>
+              <div class="card my-2">
+                  <div class="card-header"> Mechanical & Electrical Appliances</div>
+                      <div class="card-body" >
+                          <form> 
+                              <div class="row mb-2 ">                          
+                                  <div class="col-md-9">
+                                      <label class="form-label ">Description</label>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <label class="form-label">Sum Insured</label>
+                                  </div>                                                           
+                              </div>
+                              <div class="row mb-2" *ngFor="let row of groups">                          
+                                  <div class="col-md-9">
+                                      <!-- <label class="form-label">Description</label> -->
+                                      <input type="text" class="form-control " value="{{row.name}}" >
+                                  </div>
+                                  <div class="col-md-3">
+                                      <!-- <label class="form-label">Sum Insured</label> -->
+                                      <input type="text" class="form-control" value="{{row.items}}" >
+                                  </div>                              
+                              </div>
+                          </form>
+                          <td> <button class="btn btn-primary mx-2" (click)="addItem()">Add</button> </td>
+                          <td> <button class="btn btn-primary" (click)="deletItem()">Delete</button> </td>
+                      </div> 
+              </div>
+              <div class="card mb-2">
+                  <div class="card-header"> Electronic Appliances</div>
+                      <div class="card-body" >
+                          <form> 
+                              <div class="row mb-2 ">                          
+                                  <div class="col-md-9">
+                                      <label class="form-label">Description</label>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <label class="form-label">Sum Insured</label>
+                                  </div>                                                           
+                              </div>
+                              <div class="row mb-2" *ngFor="let row of groups2">                          
+                                  <div class="col-md-9">
+                                      <!-- <label class="form-label">Description</label> -->
+                                      <input type="text" class="form-control" value="{{row.name}}" >
+                                  </div>
+                                  <div class="col-md-3">
+                                      <!-- <label class="form-label">Sum Insured</label> -->
+                                      <input type="text" class="form-control" value="{{row.items}}" >
+                                  </div>                              
+                              </div>
+                          </form>
+                          <td> <button class="btn btn-primary mx-2" (click)="addItem2()">Add</button> </td>
+                          <td> <button class="btn btn-primary" (click)="deletItem2()">Delete</button> </td>
+                      </div>
+              </div>
+              <button type="button" class="btn btn-primary" style="float:right">Next</button>
+              <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button> 
+          </div>
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form7" role="tabpanel" aria-labelledby="nav-form7-tab" tabindex="0">
+          <div>
+              <div class="card my-2">
+                  <div class="card-header">Boiler and Pressure Plant</div>
+                      <div class="card-body" >
+                          <form> 
+                              <div class="row mb-2 ">                          
+                                  <div class="col-md-9">
+                                      <label class="form-label">Description</label>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <label class="form-label">Sum Insured</label>
+                                  </div>                                                           
+                              </div>
+                              <div class="row mb-2" *ngFor="let row of groups3">                          
+                                  <div class="col-md-9">
+                                      <!-- <label class="form-label">Description</label> -->
+                                      <input type="text" class="form-control" value="{{row.name}}" >
+                                  </div>
+                                  <div class="col-md-3">
+                                      <!-- <label class="form-label">Sum Insured</label> -->
+                                      <input type="text" class="form-control" value="{{row.items}}" >
+                                  </div>                              
+                              </div>
+                          </form>
+                          <td> <button class="btn btn-primary mx-2" (click)="addItem3()">Add</button> </td>
+                          <td> <button class="btn btn-primary" (click)="deletItem3()">Delete</button> </td>
+                      </div> 
+              </div>
+              <div class="card mb-2">
+                  <div class="card-header">Portable Equipment All Risks</div>
+                      <div class="card-body" >
+                          <form> 
+                              <div class="row mb-2 ">                          
+                                  <div class="col-md-9">
+                                      <label class="form-label">Description</label>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <label class="form-label">Sum Insured</label>
+                                  </div>                                                           
+                              </div>
+                              <div class="row mb-2" *ngFor="let row of groups4">                          
+                                  <div class="col-md-9">
+                                      <!-- <label class="form-label">Description</label> -->
+                                      <input type="text" class="form-control" value="{{row.name}}" >
+                                  </div>
+                                  <div class="col-md-3">
+                                      <!-- <label class="form-label">Sum Insured</label> -->
+                                      <input type="text" class="form-control" value="{{row.items}}" >
+                                  </div>                              
+                              </div>
+                          </form>
+                          <td> <button class="btn btn-primary mx-2" (click)="addItem4()">Add</button> </td>
+                          <td> <button class="btn btn-primary" (click)="deletItem4()">Delete</button> </td>
+                      </div> 
+              </div>
+          </div>
+          <button type="button" class="btn btn-primary" style="float:right">Next</button>
+          <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button> 
+     
+        </div>
+  
+      <div class="tab-pane fade" id="nav-form8" role="tabpanel" aria-labelledby="nav-form8-tab" tabindex="0">
+          <div>
+              <div class="card my-2">
+                  <div class="card-header">Fixed Glass and Sanitary Fittings</div>
+                      <div class="card-body" >
+                          <form> 
+                                                       
+                                <div class="row mb-2">
+                                            <label  class="col-sm-2 col-form-label col-form-label-sm">Description</label>
+                                            <div class="col-sm-5">
+                                            <input type="text" class="form-control form-control-sm" >
+                                            </div>
+                                            <label  class="col-sm-2 col-form-label col-form-label-sm">Sum Insured</label>
+                                            <div class="col-sm-3">
+                                            <input type="text" class="form-control form-control-sm" >
+                                            </div>
+                                </div>
+                                <div class="card-header my-2">Accompanied Baggage</div>
+                                <div class="row mb-2">
+                                            <label  class="col-sm-2 col-form-label col-form-label-sm">Description</label>
+                                            <div class="col-sm-5">
+                                            <input type="text" class="form-control form-control-sm" >
+                                            </div>
+                                            <label  class="col-sm-2 col-form-label col-form-label-sm">Sum Insured</label>
+                                            <div class="col-sm-3">
+                                            <input type="text" class="form-control form-control-sm" >
+                                            </div>
+                                </div>
+                                <div class="card-header mb-2">Signage</div>
+                                <div class="row mb-2">
+                                            <label  class="col-sm-2 col-form-label col-form-label-sm">Description</label>
+                                            <div class="col-sm-5">
+                                            <input type="text" class="form-control form-control-sm" >
+                                            </div>
+                                            <label  class="col-sm-2 col-form-label col-form-label-sm">Sum Insured</label>
+                                            <div class="col-sm-3">
+                                            <input type="text" class="form-control form-control-sm" >
+                                            </div>
+                                </div>
+                                <div class="card-header mb-2">Infidelity and Dishonesty of Employee</div>
+                                <div class="row mb-2">
+                                            <label  class="col-sm-2 col-form-label col-form-label-sm">Description</label>
+                                            <div class="col-sm-5">
+                                            <input type="text" class="form-control form-control-sm" >
+                                            </div>
+                                            <label  class="col-sm-2 col-form-label col-form-label-sm">Sum Insured</label>
+                                            <div class="col-sm-3">
+                                            <input type="text" class="form-control form-control-sm" >
+                                            </div>
+                                </div>
+                                <div class="card-header mb-2">Legal Liability</div>
+                                <div class="row mb-2" >                          
+                                    <div class="col-md-6">
+                                        <label class="form-label col-form-label-sm">Description</label>
+                                        <input type="text" class="form-control form-control-sm" >
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="form-label col-form-label-sm">Retroactive Date</label>
+                                        <form class="row row-cols-sm-auto">
+                                            <div class="col-12">
+                                                <div class="input-group">
+                                                    <input
+                                                        class="form-control form-control-sm"
+                                                        placeholder="yyyy-mm-dd"
+                                                        name="dp"
+                                                        [(ngModel)]="model"
+                                                        ngbDatepicker
+                                                        #d="ngbDatepicker"
+                                                    />
+                                                    <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- <input type="text" class="form-control form-control-sm" > -->
+                                    </div>                              
+                                    <div class="col-md-2">
+                                        <label class="form-label col-form-label-sm">Sales Turnover</label>
+                                        <input type="text" class="form-control form-control-sm" >
+                                    </div>                              
+                                    <div class="col-md-2">
+                                        <label class="form-label col-form-label-sm">Sum Insured</label>
+                                        <input type="text" class="form-control form-control-sm" >
+                                    </div>                              
+                                </div>
+                                <div class="card-header mb-2">Tenant’s Legal Liability</div>
+                                <div class="row mb-2" >                          
+                      <div class="col-md-6">
+                          <label class="form-label col-form-label-sm">Description</label>
+                          <input type="text" class="form-control form-control-sm" >
+                      </div>
+                      <div class="col-md-2">
+                          <label class="form-label col-form-label-sm">Retroactive Date</label>
+                          <form class="row row-cols-sm-auto">
+                            <div class="col-12">
+                                <div class="input-group">
+                                    <input
+                                        class="form-control form-control-sm"
+                                        placeholder="yyyy-mm-dd"
+                                        name="dp"
+                                        [(ngModel)]="model"
+                                        ngbDatepicker
+                                        #d="ngbDatepicker"
+                                    />
+                                    <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+                                </div>
+                            </div>
+                        </form>
+                          <!-- <input type="text" class="form-control form-control-sm" > -->
+                      </div>                              
+                      <div class="col-md-2">
+                          <label class="form-label col-form-label-sm">Sales Turnover</label>
+                          <input type="text" class="form-control form-control-sm" >
+                      </div>                              
+                      <div class="col-md-2">
+                          <label class="form-label col-form-label-sm">Sum Insured</label>
+                          <input type="text" class="form-control form-control-sm" >
+                      </div>                              
+                                </div>
+
+                          </form>
+                      </div> 
+              </div>
+              <!-- <div class="card mb-2">
+                  <div class="card-header">Accompanied Baggage</div>
+                      <div class="card-body" >
+                          <form> 
+                              <div class="row mb-2" >                          
+                                  <div class="col-md-9">
+                                      <label class="form-label">Description</label>
+                                      <input type="text" class="form-control" >
+                                  </div>
+                                  <div class="col-md-3">
+                                      <label class="form-label">Sum Insured</label>
+                                      <input type="text" class="form-control" >
+                                  </div>                              
+                              </div>
+                          </form>
+                      </div> 
+              </div>
+              <div class="card mb-2">
+                  <div class="card-header">Signage</div>
+                      <div class="card-body" >
+                          <form> 
+                              <div class="row mb-2" >                          
+                                  <div class="col-md-9">
+                                      <label class="form-label">Description</label>
+                                      <input type="text" class="form-control" >
+                                  </div>
+                                  <div class="col-md-3">
+                                      <label class="form-label">Sum Insured</label>
+                                      <input type="text" class="form-control" >
+                                  </div>                              
+                              </div>
+                          </form>
+                      </div> 
+              </div>
+              <div class="card mb-2">
+                  <div class="card-header">Infidelity and Dishonesty of Employee</div>
+                      <div class="card-body" >
+                          <form> 
+                              <div class="row mb-2" >                          
+                                  <div class="col-md-9">
+                                      <label class="form-label">Description</label>
+                                      <input type="text" class="form-control" >
+                                  </div>
+                                  <div class="col-md-3">
+                                      <label class="form-label">Sum Insured</label>
+                                      <input type="text" class="form-control" >
+                                  </div>                              
+                              </div>
+                          </form>
+                      </div> 
+              </div> -->
+          </div>
+          <button type="button" class="btn btn-primary" style="float:right">Next</button>
+          <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button> 
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form9" role="tabpanel" aria-labelledby="nav-form9-tab" tabindex="0">
+          <div class="card my-2">
+              <div class="card-header">Declaration by Insured</div>
+                  <div class="card-body" >
+                      <p>I/ We hereby declare that the value of insurable assets is less than ₹ 5 Crore ( Rupees Five Crore) and  the  statements  made by me  / Us  in this Proposal Form are true to the best of my / Our  knowledge  and  belief and  I / We hereby agree that this declaration shall form the basis of the contract  between me/Us and the Liberty General Insurace Limited</p>
+                      <p>If any additions or alterations are carried out in the risk proposed after the submission of this proposal form then the same should be conveyed to the insurers immediately.</p>
+                      <p>I/We have insurable interest in the subject matter of this insurance and we hereby declare that the cost of the same and the premium for this insurance is paid from legal sources of my/our funds.</p>
+                      <p>Are you or any of the proposed applicants a PEP* or a close relative of a PEP*? Yes ____ No _____</p>
+                      <p>If yes, please give details: _________________________________________________ *Politically Exposed Persons (PEPs) are individuals who are or have been entrusted with prominent public functions in a foreign country, e.g., Heads of States/Governments, senior politicians, senior government/ judicial/military officers, senior executives of state-owned corporations, important political party officials, etc. </p>
+                     <div> <p>Date :<span style="float:right">Signature of the Praposer</span></p>                               </div>
+                      <p>Place :</p>
+  
+                  <h5 style="text-align:center">INSURANCE ACT 1938 SECTION 41- Prohibition of Rebates</h5>
+                  <p>No person shall allow or offer to allow either directly or indirectly, as an inducement to any person to take out or renew or continue an insurance in respect of any kind of risk relating to lives or property in India, any rebate of the whole or part of the commission payable or any rebate of the premium shown on the policy, nor shall any person taking out or renewing  a policy accept any rebate, except such rebate as may be allowed in accordance 
+                      with the published prospectus or tables of the insurer.</p>
+                      <p>ANY PERSON MAKING DEFAULT IN COMPLYING WITH  THE PROVISIONS OF THIS SECTION SHALL BE PUNISHABLE WITH FINE WHICH MAY EXTEND TO TEN LAKHS RUPEES.</p>
+  
+                  </div> 
+          </div>
+          <button type="button" class="btn btn-primary" style="float:right">Submit</button>
+          <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button> 
+      </div>
+
+      <div class="tab-pane fade" id="nav-form10" role="tabpanel" aria-labelledby="nav-form10-tab" tabindex="0">
+          <div class="card my-2">
+                    <!-- <mat-form-field>
+                        <mat-label>Selected tab index</mat-label>
+                        <input matInput type="number" [formControl]="selected">
+                      </mat-form-field> -->
+                      <div>
+                        <button mat-raised-button
+                                class="example-add-tab-button"
+                                (click)="addTab(selectAfterAdding.checked)">
+                          Add new tab
+                        </button>
+                        <mat-checkbox #selectAfterAdding> Select tab after adding </mat-checkbox>
+                      </div>
+                      <div>
+                      <button mat-raised-button
+                      class="example-delete-tab-button"
+                      [disabled]="tabs.length === 1"
+                      (click)="removeTab(tabs.length-1)">
+                      Delete Tab
+                      </button>
+                      </div>
+                      
+                      <mat-tab-group [selectedIndex]="selected.value"
+                                     (selectedIndexChange)="selected.setValue($event)">
+                        <mat-tab *ngFor="let tab of tabs; let i = index" [label]="tab">
+                           <!-- {{tab}} -->
+                          <!--  -->
+                          <div class="container">
+                          <div class="card">
+                            <div class="card-header mb-2">Table Details</div>
+                            <div class="card-body">
+                            <form> 
+                              <div class="row row-cols-1 mb-2 " *ngFor="let row of groups10,index as i">                          
+                              
+                        
+                                  <div class="row mb-2">
+                                      <label  class="col-sm-4 col-form-label col-form-label-sm">ABuilding SI including P&F, Additional Structure</label>
+                                      <div class="col-sm-8">
+                                      <input type="text" class="form-control form-control-sm" value="{{row.field1}}">
+                                      </div>
+                                  </div>
+                                  <div class="row mb-2">
+                                      <label  class="col-sm-4 col-form-label col-form-label-sm">Plant & Machinery SI</label>
+                                      <div class="col-sm-8">
+                                      <input type="text" class="form-control form-control-sm" value="{{row.field2}}">
+                                      </div>
+                                  </div>
+                                  <div class="row mb-2">
+                                      <label  class="col-sm-4 col-form-label col-form-label-sm">Furniture & Fixtures, Fittings and other equipment</label>
+                                      <div class="col-sm-8">
+                                      <input type="text" class="form-control form-control-sm" value="{{row.field3}}">
+                                      </div>
+                                  </div>
+                                  <div class="row mb-2">
+                                      <label  class="col-sm-4 col-form-label col-form-label-sm">Stocks of Raw Material</label>
+                                      <div class="col-sm-8">
+                                      <input type="text" class="form-control form-control-sm" value="{{row.field4}}">
+                                      </div>
+                                  </div>
+                                  <div class="row mb-2">
+                                      <label  class="col-sm-4 col-form-label col-form-label-sm">Stock In process</label>
+                                      <div class="col-sm-8">
+                                      <input type="text" class="form-control form-control-sm" value="{{row.field5}}">
+                                      </div>
+                                  </div>
+                                  <div class="row mb-2">
+                                      <label  class="col-sm-4 col-form-label col-form-label-sm">Stock of Finished Goods</label>
+                                      <div class="col-sm-8">
+                                      <input type="text" class="form-control form-control-sm" value="{{row.field6}}">
+                                      </div>
+                                  </div>
+                                  <div class="row mb-2">
+                                      <label  class="col-sm-4 col-form-label col-form-label-sm">Other Contents</label>
+                                      <div class="col-sm-8">
+                                      <input type="text" class="form-control form-control-sm" value="{{row.field7}}">
+                                      </div>
+                                  </div>
+                                  <div class="row mb-2">
+                                      <label  class="col-sm-4 col-form-label col-form-label-sm">Total SI</label>
+                                      <div class="col-sm-8">
+                                      <input type="text" class="form-control form-control-sm" value="{{row.field8}}">
+                                      </div>
+                                  </div>                                                          
+                              </div> 
+                          </form>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      
+                         
+                        </mat-tab>
+                      </mat-tab-group>
+        
+    </div>
+    <button type="button" class="btn btn-primary" style="float:right">Submit</button>
+          <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button>  
+    </div> 
+          </div>
+          <!-- <button type="button" class="btn btn-primary" style="float:right">Submit</button> -->
+          <!-- <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button>  -->
+      </div>
+
+    
+
+
+            
+<!-- model for table -->
+<!-- Button trigger modal -->
+ <!-- <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Add Row
+  </button>   -->
+<!-- Modal -->
+  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form >
+                <div class="row mb-2">
+                    <div class="col-md-3 mb-2">
+                        <label class="form-label">ABuilding SI including P&F, Additional Structure</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <label class="form-label">Plant & Machinery SI</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <label class="form-label">Furniture & Fixtures, Fittings and other equipment</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <label class="form-label">Stocks of Raw Material</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <label class="form-label">Stock In process</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <label class="form-label">Stock of Finished Goods</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <label class="form-label">Other Contents</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <label class="form-label">Total SI</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+     <div class="card">
+
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Building SI including P&F, Additional Structure </th>
+                <th scope="col">Plant & Machinery SI</th>
+                <th scope="col">Furniture & Fixtures, Fittings and other equipment</th>
+                <th scope="col">Stocks of Raw Material </th>
+                <th scope="col">Stock In process</th>
+                <th scope="col">Stock of Finished Goods</th>
+                <th scope="col">Other Contents</th>
+                <th scope="col">Total SI</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+    
+            </tbody>
+        </table>
+    </div>  -->
+
+
+<!-- 
+            <div class="container">
+            <h1>Date Range Selection</h1>
+            <form>
+              <div class="form-group">
+                <label>From Date:</label>
+                <ngb-datepicker [(ngModel)]="fromDate" name="fromDate"></ngb-datepicker>
+              </div>
+              <div class="form-group">
+                <label>To Date:</label>
+                <ngb-datepicker [(ngModel)]="toDate" name="toDate"></ngb-datepicker>
+              </div>
+            </form>
+          </div> 
+-->
+       

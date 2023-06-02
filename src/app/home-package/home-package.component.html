@@ -1,0 +1,1009 @@
+
+<!-- tab form inside the card-->
+<div class="container">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-form1-tab" data-bs-toggle="tab" data-bs-target="#nav-form1" type="button" role="tab" aria-controls="nav-form1" aria-selected="true">Step 1</button>
+
+        <button class="nav-link" id="nav-form2-tab" data-bs-toggle="tab" data-bs-target="#nav-form2" type="button" role="tab" aria-controls="nav-form2" aria-selected="false">Step 2</button>
+
+        <button class="nav-link" id="nav-form3-tab" data-bs-toggle="tab" data-bs-target="#nav-form3" type="button" role="tab" aria-controls="nav-form3" aria-selected="false">Step 3</button>
+
+        <button class="nav-link" id="nav-form4-tab" data-bs-toggle="tab" data-bs-target="#nav-form4" type="button" role="tab" aria-controls="nav-form4" aria-selected="false">Step 4</button>
+
+        <button class="nav-link" id="nav-form5-tab" data-bs-toggle="tab" data-bs-target="#nav-form5" type="button" role="tab" aria-controls="nav-form5" aria-selected="false">Step 5</button>
+
+        <button class="nav-link" id="nav-form6-tab" data-bs-toggle="tab" data-bs-target="#nav-form6" type="button" role="tab" aria-controls="nav-form6" aria-selected="false">Step 6</button>
+
+        <button class="nav-link" id="nav-form7-tab" data-bs-toggle="tab" data-bs-target="#nav-form7" type="button" role="tab" aria-controls="nav-form7" aria-selected="false">Step 7</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+  
+      <div class="tab-pane fade show active" id="nav-form1" role="tabpanel" aria-labelledby="nav-form1-tab" tabindex="0">
+    
+        <div class="card my-2">   
+            <div class="card-header"> Praposal Details</div>
+                <div class="card-body" >
+                    <form>
+                        <div class="row mb-2">
+                            <div class="col-md-6">
+                                <input class="form-control " type="text" value="IRDA Regn. No.: 150" disabled readonly>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" value="UIN No.: 'IRDAN150RP0011V01202122" disabled readonly>
+                            </div>
+
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-6">
+                                <label class="form-label">Intermediary Name</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Name of Proposer (Policy to be issued in 
+                                    favour of (list out all the parties who have insurable interest) including the financial 
+                                    institutions)</label>
+                                <input type="text" class="form-control" >
+                            </div>
+
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-6">
+                                <label class="form-label">Communication address of Proposer</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Complete Address of Risk Location</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                <label class="form-label">Risk Pincode</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Phone No.</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Email Id</label>
+                                <input type="text" class="form-control" >
+                            </div>
+
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-3">
+                                <label class="form-label">Policy Period Form</label>
+                                <form class="row row-cols-sm-auto">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <input
+                                            class="form-control"
+                                            placeholder="yyyy-mm-dd"
+                                            name="dp"
+                                            [(ngModel)]="model"
+                                            ngbDatepicker
+                                            #d="ngbDatepicker"
+                                        />
+                                        <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"><!-- in class directly we added attribute for icon  So no need to put here <i class="bi bi-calendar3"></i> --></button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Policy Period To</label>
+                                <form class="row row-cols-sm-auto">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <input
+                                            class="form-control"
+                                            placeholder="yyyy-mm-dd"
+                                            name="dp"
+                                            [(ngModel)]="model"
+                                            ngbDatepicker
+                                            #d="ngbDatepicker"
+                                        />
+                                        <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"><!-- in class directly we added attribute for icon  So no need to put here <i class="bi bi-calendar3"></i> --></button>
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">NOTE :</label>
+                                <input class="form-control" type="text" value="Note: Period shall not exceed 1 years." disabled readonly>
+                            </div>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-primary" style="float:right">Next</button>
+                </div> 
+        </div>
+
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form2" role="tabpanel" aria-labelledby="nav-form2-tab" tabindex="0">
+        <div>
+            <div class="card my-2">
+                <div class="card-header mb-2">Liberty Bharat Griha Raksha</div>
+                    <div class="card-body" >
+                        <form>
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Occupancy</label>
+                                    <input type="text" class="form-control" value="Individual Dwellings">
+                                </div>
+                                <div class="col-md-8">
+                                    <label class="form-label">Describption of Property & Sum Insured</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div> 
+                            <div class="row mb-2">
+                                <div class="col-12">
+                                    <p class="form-control" style="background-color: rgb(238, 238, 238);" >Cover/s required:(When Home Building and Home Contents are opted for, cover for General Contents of Home for Sum Insured equal to 20% of the Sum Insured for Home Building Cover subject to a 
+                                        maximum of ₹ 10 Lakh [Rupees Ten Lakh] is automatically provided).</p>
+        
+                                </div>
+                            </div>  
+                            <div class="row mb-2">
+                                <div class="col-md-3">
+                                    <label class="form-label">Home Building & Home Contents</label>
+                                    <input type="text" class="form-control" >
+
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Home Building Only</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Home Contents only</label>
+                                    <input type="text" class="form-control" >
+
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Total SI</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>  
+                            
+                            <div class="card-header mb-2">Risk Parameter</div>
+                            <div class="row mb-2">
+                                <div class="col-md-3">
+                                    <label class="form-label">Age of Building</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Construction Type</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">3 Year Loss</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Basement</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>                 
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Risk Situated Above Ground</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Our Own</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Long Term Tenure</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+            
+                            </div>   
+                        </form>
+                    </div> 
+            </div>
+            <!-- <div class="card my-2">
+                <div class="card-header mb-2">Risk Parameter</div>
+                    <div class="card-body" >
+                        <form>
+                            <div class="row mb-2">
+                                <div class="col-md-3">
+                                    <label class="form-label">Age of Building</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Construction Type</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">3 Year Loss</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Basement</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>                 
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Risk Situated Above Ground</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Our Own</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Long Term Tenure</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+
+                            </div>                 
+                        </form>
+
+                    </div> 
+            </div> -->
+            <button type="button" class="btn btn-primary" style="float:right">Next</button>
+            <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button>
+        </div>  
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form3" role="tabpanel" aria-labelledby="nav-form3-tab" tabindex="0">
+        <div>
+            <div class="card my-2">
+                <div class="card-header mb-2">Valuable Contents</div>
+                    <div class="card-body" >
+                        <form>
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Description Of Valuable Contents</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Weight In Gms</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Quantity</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Invoice No.</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Sum Insured (Rs.)</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div> 
+                            <div class="card-header mb-2">Personal Accident</div>
+                <div class="row mb-2">
+                    <div class="col-md-4">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Age</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Nominee Name</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Relationship</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Sum Insured (Rs.)</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>                 
+    <div class="card-header mb-2">Burglary and Housebreaking Section</div>
+                <div class="row mb-2">
+                    <div class="col-md-3">
+                        <label class="form-label">Risk Location</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Stock-in- Trade</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Other Assets 
+                            (please Specify)</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Total SI</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>  
+                <div class="row mb-2">
+                    <div class="col-md-4">
+                        <label class="form-label">Coins and/or 
+                            Currency Notes in 
+                            Locked safe</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Furniture, Fixtures, 
+                            Fittings, Utensils 
+                            and Appliances in 
+                            trade.</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Goods held by the Proposer in 
+                            Trust or on commission for 
+                            which he isresponsible.</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>                
+                            <!-- <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Age</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Nominee Name</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Relationship</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Sum Insured (Rs.)</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>                 -->
+                        </form>
+                    </div> 
+            </div>         
+            <!-- <div class="card my-2">
+                <div class="card-header mb-2">Personal Accident</div>
+                    <div class="card-body" >
+                        <form>               
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Age</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Nominee Name</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Relationship</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Sum Insured (Rs.)</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>                 
+                        </form>
+                    </div> 
+            </div>
+            <div class="card my-2">
+                <div class="card-header mb-2">Burglary and Housebreaking Section</div>
+                    <div class="card-body" >
+                        <form>               
+                            <div class="row mb-2">
+                                <div class="col-md-3">
+                                    <label class="form-label">Risk Location</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Stock-in- Trade</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Other Assets 
+                                        (please Specify)</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Total SI</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>  
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Coins and/or 
+                                        Currency Notes in 
+                                        Locked safe</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Furniture, Fixtures, 
+                                        Fittings, Utensils 
+                                        and Appliances in 
+                                        trade.</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Goods held by the Proposer in 
+                                        Trust or on commission for 
+                                        which he isresponsible.</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>               
+                        </form>
+                    </div> 
+            </div>            -->
+            <button type="button" class="btn btn-primary" style="float:right">Next</button>
+            <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button>
+        </div>
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form4" role="tabpanel" aria-labelledby="nav-form4-tab" tabindex="0">
+        <div>
+            <div class="card my-2">
+                <div class="card-header mb-2">Money Insurance</div>
+                    <div class="card-body" >
+                        <form>
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Risk Location</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Cash In Safe SI</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Transit From</label>
+                                    <input type="text" class="form-control" value="Insured Premises" >
+                                </div>
+                            </div>                
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Transit To</label>
+                                    <input type="text" class="form-control" value="Bank & Vice Versa" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Per Sending Limit 
+                                        (Rs.)</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Money in Transit Coverage - Annual 
+                                        Carrying Limit (Rs.)</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="card-header mb-2">Personal Accident</div>
+                <div class="row mb-2">
+                    <div class="col-md-4">
+                        <label class="form-label">Risk Location</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Air Conditioner</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Compressor</label>
+                        <input type="text" class="form-control"  >
+                    </div>
+                </div>                
+                <div class="row mb-2">
+                    <div class="col-md-4">
+                        <label class="form-label">Refrigerators</label>
+                        <input type="text" class="form-control"  >
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Others</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Total Sum Insured</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>                
+    <div class="card-header mb-2">Fixed Glass and Sanitary Fittings </div>        
+                <div class="row mb-2">
+                    <div class="col-md-3">
+                        <label class="form-label">Risk Location</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Plain Plate Glass</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Stained Glass</label>
+                        <input type="text" class="form-control"  >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Total Sum Insured</label>
+                        <input type="text" class="form-control"  >
+                    </div>
+                </div>                  
+                        </form>
+                    </div> 
+            </div>         
+            <!-- <div class="card my-2">
+                <div class="card-header mb-2">Personal Accident</div>
+                    <div class="card-body" >
+                        <form>               
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Risk Location</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Air Conditioner</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Compressor</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                            </div>                
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label class="form-label">Refrigerators</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Others</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Total Sum Insured</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>                
+                        </form>
+                    </div> 
+            </div>
+            <div class="card my-2">
+                <div class="card-header mb-2">Fixed Glass and Sanitary Fittings </div>
+                    <div class="card-body" >
+                        <form>               
+                            <div class="row mb-2">
+                                <div class="col-md-3">
+                                    <label class="form-label">Risk Location</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Plain Plate Glass</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Stained Glass</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Total Sum Insured</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                            </div>                
+                            
+                                            
+                        </form>
+                    </div> 
+            </div> -->
+            <button type="button" class="btn btn-primary" style="float:right">Next</button>
+            <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button>
+        </div>
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form5" role="tabpanel" aria-labelledby="nav-form5-tab" tabindex="0"> 
+        <div>
+            <div class="card my-2">
+                <div class="card-header mb-2">Electronic Equipments</div>
+                    <div class="card-body" >
+                        <form>
+                            <div class="row mb-2">
+                                <div class="col-md-3">
+                                    <label class="form-label">Risk Location</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Description</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Total Sum Insured</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>  
+    <div class="card-header mb-2">Portable Equipment All Risks</div>          
+                <div class="row mb-2">
+                    <div class="col-md-3">
+                        <label class="form-label">Risk Location</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Description</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Total Sum Insured</label>
+                        <input type="text" class="form-control"  >
+                    </div>
+                </div>                
+    <div class="card-header mb-2">Accompanied Baggage</div>
+                <div class="row mb-2">
+                    <div class="col-md-3">
+                        <label class="form-label">Risk Location</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Description</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Total Sum Insured</label>
+                        <input type="text" class="form-control"  >
+                    </div>
+                </div>                
+    <div class="card-header mb-2">Legal Liability</div>
+                <div class="row mb-2">
+                    <div class="col-md-2">
+                        <label class="form-label">Risk Location</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Retroactive Date</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Annual Turnover</label>
+                        <input type="text" class="form-control"  >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Limit of liability - AOA</label>
+                        <input type="text" class="form-control"  >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Limit of liability - AOY</label>
+                        <input type="text" class="form-control"  >
+                    </div>
+                </div>                
+    <div class="card-header mb-2">Tenant's Legal Liability</div>
+                <div class="row mb-2">
+                    <div class="col-md-2">
+                        <label class="form-label">Risk Location</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Retroactive Date</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Annual Turnover</label>
+                        <input type="text" class="form-control"  >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Limit of liability - AOA</label>
+                        <input type="text" class="form-control"  >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Limit of liability - AOY</label>
+                        <input type="text" class="form-control"  >
+                    </div>
+                </div>                  
+                        </form>
+                    </div> 
+            </div>         
+            <!-- <div class="card my-2">
+                <div class="card-header mb-2">Portable Equipment All Risks</div>
+                    <div class="card-body" >
+                        <form>               
+                            <div class="row mb-2">
+                                <div class="col-md-3">
+                                    <label class="form-label">Risk Location</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Description</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Total Sum Insured</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                            </div>                
+                        </form>
+                    </div> 
+            </div>
+            <div class="card my-2">
+                <div class="card-header mb-2">Accompanied Baggage</div>
+                    <div class="card-body" >
+                        <form>               
+                            <div class="row mb-2">
+                                <div class="col-md-3">
+                                    <label class="form-label">Risk Location</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Description</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Total Sum Insured</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                            </div>                
+                        </form>
+                    </div> 
+            </div>
+            <div class="card my-2">
+                <div class="card-header mb-2">Legal Liability</div>
+                    <div class="card-body" >
+                        <form>               
+                            <div class="row mb-2">
+                                <div class="col-md-2">
+                                    <label class="form-label">Risk Location</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Retroactive Date</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Annual Turnover</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Limit of liability - AOA</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Limit of liability - AOY</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                            </div>                
+                        </form>
+                    </div> 
+            </div>
+            <div class="card my-2">
+                <div class="card-header mb-2">Tenant's Legal Liability</div>
+                    <div class="card-body" >
+                        <form>               
+                            <div class="row mb-2">
+                                <div class="col-md-2">
+                                    <label class="form-label">Risk Location</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Retroactive Date</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Annual Turnover</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Limit of liability - AOA</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Limit of liability - AOY</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                            </div>                
+                        </form>
+                    </div> 
+            </div> -->
+            <button type="button" class="btn btn-primary" style="float:right">Next</button>
+            <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button>
+        </div>
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form6" role="tabpanel" aria-labelledby="nav-form6-tab" tabindex="0">
+        <div>        
+            <div class="card my-2">
+                <div class="card-header">Other details for Valuabe Items</div>
+                    <div class="card-body" >
+                        <form>               
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="form-label">Do You require ‘Cover for Valuable Contents on Agreed Value Basis (under Home Contents cover)</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">If Yes, please attach list of items and Sum Insured of each Items:</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="row my-2" >
+                                    <div class="col">
+                                        <p class="form-control" style="background-color: rgb(238, 238, 238);" >Note : Valuable Contents of Your Home consist of items such as jewellery, silverware, paintings, works of art, antique items, curios and items of similar nature. (You have to submit a 
+                                            Valuation Certificate. However, the requirement of valuation certificate is waived if the Sum Insured opted for is upto ₹ 5 Lakh and Individual item value does not exceed ₹ 1 Lakh).</p>
+                                    </div>  
+                                </div> 
+                            </div>  
+                            
+                            <div class="card-header">Other Common Details</div>
+                    <div class="row mb-2">
+                            <div class="col-md-6">
+                                <label class="form-label">Carpet area of structure of Home in square metres</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Rate of Cost of Construction per square metre at the policy Commencement</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                    </div>
+                    <div class="row mb-2">
+                            <div class="col-md-6">
+                                <label class="form-label">Is it in a multi-storey building or is it a standalone house?</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Is there any policy in place for the same property? If Yes - Please Provide the 
+                                    Details</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                    </div>
+                    <div class="row mb-2">
+                            <div class="col-md-6">
+                                <label class="form-label">In case of multi-storey building, please provide the floor number of Your house</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Burglary Proof Alarm System placed ?</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Close Circuit T.V. Installed ?</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                    </div>
+                    <div class="row mb-2">
+                            <div class="col-md-3">
+                                <label class="form-label">is premises surrouned with Boudary walls ?</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Height of Boundary Walls</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Expiring Insurer</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">STFI Exposure</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                    </div>
+                    <div class="row mb-2">
+                            <div class="col">
+                                <label class="form-label">Any other details need to be share, related to Peril Risk & Claims</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                    </div>
+                        </form>
+                    </div> 
+            </div>
+            <!-- <div class="card">
+                <div class="card-header">Other Common Details</div>
+                    <div class="card-body" >
+                        <form>
+                                <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Carpet area of structure of Home in square metres</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Rate of Cost of Construction per square metre at the policy Commencement</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Is it in a multi-storey building or is it a standalone house?</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Is there any policy in place for the same property? If Yes - Please Provide the 
+                                                Details</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <label class="form-label">In case of multi-storey building, please provide the floor number of Your house</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Burglary Proof Alarm System placed ?</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Close Circuit T.V. Installed ?</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col-md-3">
+                                            <label class="form-label">is premises surrouned with Boudary walls ?</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Height of Boundary Walls</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Expiring Insurer</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">STFI Exposure</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                                <div class="row mb-2">
+                                        <div class="col">
+                                            <label class="form-label">Any other details need to be share, related to Peril Risk & Claims</label>
+                                            <input type="text" class="form-control" >
+                                        </div>
+                                </div>
+                        </form>
+
+                    </div> 
+            </div> -->
+            <button type="button" class="btn btn-primary" style="float:right">Next</button>
+            <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button>
+        </div>
+      </div>
+  
+      <div class="tab-pane fade" id="nav-form7" role="tabpanel" aria-labelledby="nav-form7-tab" tabindex="0">
+        <div class="card my-2">
+            <div class="card-header">Declaration by Insured</div>
+                <div class="card-body" >
+                    <p>I/ We hereby declare that the statements made by me / us in this Proposal Form are true to the best of my / our knowledge and belief and I / We hereby agree that this declaration shall form 
+                        the basis of the contract between me/us and the Liberty General Insurace Limited</p>
+                    <p>If any additions or alterations are carried out in the risk proposed after the submission of this proposal form then the same should be conveyed to the insurers immediately.</p>
+                   
+                   <div> <p>Date :<span style="float:right">Signature of the Praposer</span></p>                               </div>
+                    <p>Place :</p>
+
+                <h5 style="text-align:center">INSURANCE ACT 1938 SECTION 41- Prohibition of Rebates</h5>
+                <p>No person shall allow or offer to allow either directly or indirectly, as an inducement to any person to take out or renew or continue an insurance in respect of any kind of risk relating to lives or 
+                    property in India, any rebate of the whole or part of the commission payable or any rebate of the premium shown on the policy, nor shall any person taking out or renewing a policy accept any 
+                    rebate, except such rebate as may be allowed in accordance with the published prospectus or tables of the insurer.</p>
+                    <p>I/We have insurable interest in the subject matter of this insurance and we hereby declare that the cost of the same and the premium for this insurance is paid from legal sources of my/our funds.</p>
+                    <p>Are you or any of the proposed applicants a PEP* or a close relative of a PEP*? Yes ____ No _____</p>
+                  <p>If yes, please give details: _________________________________________________ *Politically Exposed Persons (PEPs) are individuals who are or have been entrusted with prominent 
+                  public functions in a foreign country, e.g., Heads of States/Governments, senior politicians, senior government/ judicial/military officers, senior executives of state-owned corporations, 
+                  important political party officials, etc.</p>
+                  <p>ANY PERSON MAKING DEFAULT IN COMPLYING WITH THE PROVISIONS OF THIS SECTION SHALL BE PUNISHABLE WITH FINE WHICH MAY EXTEND TO TEN LAKHS RUPEES.</p>
+                </div> 
+        </div>
+        <button type="button" class="btn btn-primary" style="float:right">Submit</button>
+        <button type="button" class="btn btn-secondary me-2" style="float:right">Previous</button> 
+  
+    </div>
+  </div>
+  </div>
+<!-- tab -->
+
+
+
+
+
+
+
+
+
+
+
+    
+       
